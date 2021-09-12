@@ -1,0 +1,88 @@
+#header {
+    height: 14px;
+    background-color: #363433;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px;
+}
+
+#header.expanded {
+    height: 94px;
+}
+
+#header .prompt {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 8px 0px 16px 16px;
+    padding: 2px 16px 2px 2px;
+    color: #ffffff;
+    font-family: 'Urbanist', sans-serif;
+    border: 0;
+    font-size: 11pt;
+    text-align: left;
+    /* width: calc(100% - 36px); */
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+#header .placeholder {
+    color:rgba(255, 255, 255, 0.5)
+}
+
+#header textarea {
+    resize: none
+}
+
+#header textarea:focus-visible {
+    outline: none
+}
+
+#header #edit {
+    position: absolute;
+    top: 8px;
+    right: 36px;
+    width: 16px;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Urbanist', sans-serif;
+    color: rgba(255,255,255,0.5);
+}
+
+#header #edit:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+#header .expand {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 24px;
+    width: 100%;
+    padding: 2px 0 0 0;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+#header .expand div {
+    border-radius: 12px;
+    visibility:hidden;
+    background-color: #aaaaaa;
+    box-shadow: rgba(0,0,0,0.25) 0px 3px 5px;
+    height: 24px;
+    width: 24px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .expand div * {
+    visibility: inherit;
+}
+
+#header .expand:hover div {
+    visibility: visible;
+}

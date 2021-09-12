@@ -1,0 +1,37 @@
+#overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alert {
+    background-color: #363433;
+    width: 30%;
+    min-width: 200px;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    padding: 16px 20px 20px;
+    border-radius: 12px;
+    font-size: 12pt;
+}
+
+#alert .row {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#alert button {
+    border: 0;
+    border-radius: 4px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 12pt;
+    width: calc(50% - 8px);
+    padding: 4px 0;
+}

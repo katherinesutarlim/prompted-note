@@ -1,0 +1,16 @@
+#right-sidebar {
+    background-color: #0f0f0f;
+    height: calc(100% - 8px);
+    width: 40px;
+    padding: 4px 0;
+}
+
+#right-sidebar .menu-item {
+    background-color: #171615;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
