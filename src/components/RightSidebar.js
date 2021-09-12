@@ -2,16 +2,23 @@ import React, {useState, useRef, useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSave, faFile } from "@fortawesome/free-solid-svg-icons";
+import PropTypes from "prop-types";
 import "./RightSidebar.css";
 import { getPrompt, getTextContent } from "../store/selectors";
 import { alert } from "./Alert";
 import { newFile } from "../store/actions";
+
 
 const MenuItem = ({ icon, onClick }) => (
   <button onClick={onClick} className="menu-item">
     <FontAwesomeIcon icon={icon} color="#ffffff" size="lg" />
   </button>
 );
+
+MenuItem.propTypes = {
+  icon: PropTypes.object,
+  onClick: PropTypes.func
+};
 
 const RightSideBar = () => {
   const prompt = useSelector(getPrompt);
